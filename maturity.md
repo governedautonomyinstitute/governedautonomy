@@ -1,72 +1,43 @@
-> **Canonical:** https://governedautonomy.org/maturity/ · Doctrine v3.4 · published by the Governed Autonomy Institute
-> This mirror may lag the site; the site is authoritative.
+> **Canonical:** https://governedautonomy.org/maturity/ · Doctrine v4 · published by the Governed Autonomy Institute
+> This file is generated from the built site at https://governedautonomy.org/maturity/ — the site is authoritative.
 
-# Governed Autonomy Maturity Model
+# Governed Autonomy Organizational Maturity Evaluation v4
 
-Where is your organization on the path to governed autonomy?
+Version 4 | Released 1 November 2026 | Governed Autonomy Institute
 
-The Governed Autonomy Maturity Model gives enterprises a framework to assess their current state, identify gaps, and sequence their adoption of Governed Autonomy principles. It maps directly to the 5 Laws, 5 Architectural Planes, and 6 Framework Pillars.
+This instrument evaluates how consistently an organization establishes, operates and improves agent governance. It is separate from the [runtime baseline](https://governedautonomy.org/doctrine/), the permitted effects of any use case and [deployment conformance](https://governedautonomy.org/assessment/). A maturity rating shall not license an action, waive a Law or convert incomplete deployment evidence into conformance.
 
-There are three maturity levels. Each one is independently meaningful. Level 1 is not just a stepping stone, it is a defensible operational posture for organizations in early agentic AI deployment.
+## Evaluation method
 
------
+Declare the organizational boundary, evaluation date, owners, evidence period, representative deployments and exclusions. Rate each dimension independently using observed operating evidence. The names Identified, Governed and Continuous are retained for continuity, but v3.6 narrative ratings and RFC revision 2 level-to-tier scores do not automatically convert to these ratings.
 
-## Level 1: Identified
+| Dimension | Identified | Governed | Continuous |
+|---|---|---|---|
+| Inventory and accountability | Agent/workload and use-case inventory has owners and explicit gaps; authoritative sources and lifecycle responsibilities are identified. | Issuance, change, expiry and withdrawal are routinely reconciled against operated deployments; sampled attribution is dependable. | Discovery and change signals expose drift; effectiveness is measured and exceptions are resolved through an operating feedback loop. |
+| Missions and profiles | Missions, effect boundaries and policy owners are documented for sampled deployments; unassessed cases remain explicit. | Deployment owners approve profiles, standing bounds and change rules; permission is based on profiles rather than maturity labels. | Profile changes and observed failures systematically improve mission design and risk decisions without granting silent scope growth. |
+| Enforcement and dependencies | Enforcement points, trusted functions, exclusions and known bypasses are inventoried. | Applicable controls, cross-system contracts and dependency-failure modes are demonstrated and operated under change control. | Changes, bypass signals and failures drive targeted retests; recurring jobs retain current checks as capability and scale change. |
+| Collaboration and state | Handoffs, authorities, persistent stores and downstream obligations have accountable owners. | Grant chains, shared limits, revocation and memory/output lifecycle are exercised across the declared operating boundary. | Cross-boundary failures, state contamination and coordination limits are measured and used to improve controls and contracts. |
+| Intervention and continuity | Intervention, ownership and service dependencies are identified; gaps are visible. | Pause, revoke, handoff and recovery are exercised with deadlines, measurable bounds and explicit authority. | Exercises and incidents lead to demonstrated improvements in continuity, residual-effect reporting and restoration discipline. |
+| Evidence and learning | Evidence sources, access, retention and known omissions are documented. | Sampled missions are reconstructable; claims, limits, failures and retests are recorded with consistent assessment methods. | Evidence sufficiency, false denials, useful completion and human burden are tracked; disagreements and incidents improve methods and controls. |
 
-***You know what your agents are.***
+**Not assessed** is used when the evidence cannot support a rating. **Below Identified** means affirmative evidence shows the stated Identified practices are absent or materially incomplete. A missing document alone may instead mean unavailable evidence; the evaluator states which.
 
-  - Agents are inventoried and registered as enterprise identities
-  - Each agent has a defined owner, a provisioned credential, and a revocation path
-  - Mission scope is documented: what the agent is authorized to accomplish
-  - Least Agency boundaries are defined: minimum decision scope established per mission
-  - Basic audit logging is in place
+For each dimension, assign the highest stage whose practices and preceding practices are evidenced throughout the declared evaluated scope. Document exceptions and sampling limits. A policy document without operating evidence does not demonstrate the Governed or Continuous stage.
 
-At Level 1, you have eliminated the most dangerous condition in agentic AI: unknown agents operating with unknown scope. You cannot govern what you cannot see.
+## Required evaluation record
 
-**Law alignment:** Law 1, Agents Are Identities, Not Tools
+Record the dimension, rating, evidence and period, sample and exclusions, assessor and interests, unresolved gaps, owner and improvement commitment. State whether evidence is documentary, examined operation, exercise or independently reviewed.
 
------
+Use the dimension profile as the primary result. If an overall stage is reported, use the lowest evidenced dimension, disclose the entire profile and do not turn not-assessed dimensions into a stage. Explain the organizational boundary so that a mature team does not imply an unevaluated enterprise is equally mature.
 
-## Level 2: Governed
+## What the rating means
 
-***You control what your agents do.***
+Identified means governance responsibilities and gaps are visible. Governed means the organization demonstrates and operates the controls required for its declared deployments. Continuous means it measures their performance and changes them through an accountable feedback process. These describe operating capability, not increasing tiers of permitted effects.
 
-  - Behavioral policy is defined and enforced across systems
-  - Runtime enforcement intercepts and evaluates agent actions during execution
-  - Human oversight interfaces are operational: inspect, interrupt, and override are available
-  - Cross-system governance is active: no single domain governs in isolation
-  - Least Agency is enforced: agents operate with minimum decision scope required for their mission
-  - Threat surface monitoring is active for prompt injection and intent hijacking
+A newly formed organization can run a narrow deployment that satisfies all applicable baseline and profile requirements. A highly mature organization can operate a nonconforming deployment. Report both facts rather than forcing them into one score.
 
-At Level 2, authorization and governance are both present. The gap identified in the Governed Autonomy Declaration is closed. You have moved from *"we authorized the agent"* to *"we govern the behavior."*
+## Review and improvement
 
-**Law alignment:** Laws 2, 3, and 5
+The organization declares a review interval appropriate to its change rate and risk, with event-triggered reviews for material boundary, authority or operating changes. Each improvement commitment names the affected dimension, required evidence, owner and review date. An upward rating requires new evidence; a published plan to improve is not the improvement itself.
 
------
-
-## Level 3: Continuous
-
-***Your governance evolves as fast as your agents do.***
-
-  - Every handoff type (delegation, orchestration, tool invocation, subagent spawning) is explicitly governed with defined, enforced, and revocable trust boundaries
-  - Behavioral drift detection is active: deviations from sanctioned behavior identified in real time
-  - Full threat surface coverage: prompt injection, intent hijacking, cascading failure, and behavioral drift
-  - Governance policy evolves continuously based on observed agent behavior
-  - Full forensic reconstruction available for every agent action across every system
-  - Governance scales with agent deployment, with no manual bottlenecks
-
-At Level 3, governance is not a control layer. It is an operating characteristic of the system. Agents scale. Governance scales with them.
-
-**Law alignment:** All 5 Laws, full doctrine operational
-
------
-
-## Maturity Summary
-
-| Level | Name       | What It Means                            | Primary Laws |
-| ----- | ---------- | ---------------------------------------- | ------------ |
-| 1     | Identified | You know what your agents are            | Law 1        |
-| 2     | Governed   | You control what your agents do          | Laws 2, 3, 5 |
-| 3     | Continuous | Your governance evolves with your agents | All 5 Laws   |
-
-> The goal is not to reach Level 3 immediately. The goal is to never deploy agents beyond your current governance maturity.
+Nothing here prescribes staffing ratios, professional certification, a commercial product, or an enterprise-wide security replacement. Adopters integrate the evaluation with their existing organizational risk and assurance processes.

@@ -1,0 +1,38 @@
+{
+  "title": "The Governed Autonomy Doctrine",
+  "description": "A published standard for the runtime governance of autonomous AI agents: 5 Laws, 5 Architectural Planes, 6 Framework Pillars, a maturity model, and eighteen runtime requirements (R01 to R18). Canonical edition at https://governedautonomy.org/",
+  "creators": [
+    {
+      "name": "Governed Autonomy Institute",
+      "type": "Organizational"
+    }
+  ],
+  "upload_type": "publication",
+  "publication_type": "standard",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "version": "v4",
+  "keywords": [
+    "governed autonomy",
+    "AI agent governance",
+    "runtime enforcement",
+    "least agency",
+    "agent identity",
+    "multi-agent delegation",
+    "conformance criteria",
+    "AI governance"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://governedautonomy.org/",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://governedautonomy.org/changelog/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}

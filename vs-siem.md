@@ -1,5 +1,5 @@
-> **Canonical:** https://governedautonomy.org/vs/siem/ · Doctrine v3.4 · published by the Governed Autonomy Institute
-> This mirror may lag the site; the site is authoritative.
+> **Canonical:** https://governedautonomy.org/vs/siem/ · Doctrine v4 · published by the Governed Autonomy Institute
+> This file is generated from the built site at https://governedautonomy.org/vs/siem/ — the site is authoritative.
 
 # Governed Autonomy vs Security Monitoring
 
@@ -9,13 +9,13 @@ Security monitoring is the enterprise's record of truth — telemetry collection
 
 Against autonomous agents, the timeline collapses.
 
------
+---
 
 ## What monitoring does well
 
-  - Cross-domain visibility: one place where firewall, endpoint, identity, and application telemetry converge
-  - Detection logic refined over decades — correlation, anomaly identification, threat intelligence
-  - Forensic reconstruction and the evidentiary record that audit and incident response depend on
+- Cross-domain visibility: one place where firewall, endpoint, identity, and application telemetry converge
+- Detection logic refined over decades — correlation, anomaly identification, threat intelligence
+- Forensic reconstruction and the evidentiary record that audit and incident response depend on
 
 ## Where it stops
 
@@ -25,7 +25,7 @@ Monitoring sees *events*, not *actors with missions*. If agent actions are not e
 
 ### Runtime behavior control
 
-Detection is, by definition, after the fact. An autonomous agent executing a corrupted plan completes it in seconds — a **Cascading Failure** propagates across interconnected workflows before the first alert is triaged. [Enforce at Runtime](/laws/#law-2-enforce-at-runtime) names the requirement: control during execution, not detection after it. And automated response carries its own trap: a SOAR platform empowered to act autonomously is itself a privileged agent, and ungoverned, it becomes the next incident.
+Detection is, by definition, after the fact. An autonomous agent executing a corrupted plan completes it in seconds — a **Cascading Failure** propagates across interconnected workflows before the first alert is triaged. [Enforce at Runtime](https://governedautonomy.org/laws/#law-2-enforce-at-runtime) names the requirement: enforcement before each effect, not detection after it. And automated response carries its own trap: a SOAR platform empowered to act autonomously is itself a privileged agent, and ungoverned, it becomes the next incident.
 
 ### System integration
 
@@ -37,4 +37,8 @@ Monitoring aggregates many systems' logs — but aggregation is not enforcement.
 
 ## Coordination, not replacement
 
-In the Governed Autonomy model, security platforms supply the risk context that runtime enforcement decisions consume — and agent behavior itself becomes first-class telemetry feeding them. [Human Oversight, Audit & Traceability](/architecture/#plane-4-human-oversight-audit-traceability) is built on monitoring's strengths: full execution trace, forensic reconstruction, and the interfaces through which [Humans Retain the Right to Intervene](/laws/#law-5-humans-retain-the-right-to-intervene). Detection remains essential. It is the floor of governance, not the ceiling.
+In the Governed Autonomy model, security platforms supply the risk context that runtime enforcement decisions consume, and agent behavior itself becomes first-class telemetry feeding them. [Human Oversight, Audit & Traceability](https://governedautonomy.org/architecture/#plane-4-human-oversight-audit-traceability) is built on monitoring's strengths: the evidentiary record, reconstruction of what happened, and the interfaces through which [Humans Retain the Right to Intervene](https://governedautonomy.org/laws/#law-5-humans-retain-the-right-to-intervene). Detection remains essential. It is the floor of governance, not the ceiling.
+
+## The test for any control
+
+Whatever its vendor calls it: does the control mediate consequential actions, and can the governed actor bypass or disable it? A product sold as a guardrail that intercepts actions before they execute is a Plane 2 mechanism regardless of its label. A control the agent can update away, or that sits in only one system, is not governance, whatever it is called. What makes a control part of Governed Autonomy is that it is external to the agent, cannot be modified by the agent, and spans the systems the agent touches ([Law 2](https://governedautonomy.org/laws/#law-2-enforce-at-runtime), [Law 3](https://governedautonomy.org/laws/#law-3-governance-must-span-systems)).

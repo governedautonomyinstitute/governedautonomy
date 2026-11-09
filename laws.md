@@ -1,120 +1,34 @@
-> **Canonical:** https://governedautonomy.org/laws/ · Doctrine v3.4 · published by the Governed Autonomy Institute
-> This mirror may lag the site; the site is authoritative.
+> **Canonical:** https://governedautonomy.org/laws/ · Doctrine v4 · published by the Governed Autonomy Institute
+> This file is generated from the built site at https://governedautonomy.org/laws/ — the site is authoritative.
 
 # The 5 Laws of Governed Autonomy
 
-Foundational, non-negotiable principles. Each law is independently violatable: a specific architectural decision can breach each one individually.
+Foundational principles. Each law is independently violatable: a specific architectural decision can breach each one individually.
 
-<div class="law-block" data-astro-cid-oudwzbyk="">
+## The three non-negotiables
 
-<div class="law-num" data-astro-cid-oudwzbyk="">
+Governance shall operate in the execution path, at the time relevant conditions must hold. Enforcement shall cover the declared cross-system effect boundary rather than rely on a fragment that the agent can bypass. Agents shall operate under Least Agency: no greater decision scope or authority than their approved missions require.
 
-01
-
-</div>
-
-<div class="law-body" data-astro-cid-oudwzbyk="">
+Least Agency includes the zero case: the mission owner first decides whether autonomous decision-making is warranted. Useful autonomy is then bounded and evaluated; success is not defined solely by how much work is blocked.
 
 ## Agents Are Identities, Not Tools
 
-**An autonomous agent that reasons, plans, and executes across systems is an operational identity.**
-
-It must be provisioned, credentialed, scoped, and revoked with the same rigor applied to human identities, and with stricter constraints appropriate to its autonomy. Just as Least Privilege limits what a user can access, **Least Agency limits what an agent can decide and act on.** An agent must be granted only the minimum decision scope, tool access, and action authority required to accomplish its mission — nothing more.
-
-Treating an agent as a feature or a workflow is an architectural mistake with operational consequences.
-
-> Least Privilege limits access. Least Agency limits autonomy. Governed Autonomy defines the third leg of the governance trilogy.
-
-</div>
-
-</div>
-
-<div class="law-block" data-astro-cid-oudwzbyk="">
-
-<div class="law-num" data-astro-cid-oudwzbyk="">
-
-02
-
-</div>
-
-<div class="law-body" data-astro-cid-oudwzbyk="">
+An autonomous agent is an attributable operational principal with an accountable owner and lifecycle. Its logical identity, running workload, relevant model and tools, assignment and granted authority shall be distinguishable. Shared infrastructure shall not erase who requested, authorized or performed an effect. Identity does not by itself confer a mission or permission.
 
 ## Enforce at Runtime
 
-**Control must happen during execution, not only before it, not only after.**
-
-Pre-execution authorization cannot anticipate autonomous decisions made mid-chain. Post-execution detection cannot undo actions already taken. Runtime is the only enforcement window that matches the continuous, adaptive nature of autonomous agent behavior.
-
-</div>
-
-</div>
-
-<div class="law-block" data-astro-cid-oudwzbyk="">
-
-<div class="law-num" data-astro-cid-oudwzbyk="">
-
-03
-
-</div>
-
-<div class="law-body" data-astro-cid-oudwzbyk="">
+An agent proposal shall be subject to protected policy and enforcement before the governed effect occurs, with further checks where material conditions can change before completion. Initial admission and after-the-fact detection alone are insufficient. Standing authorization can permit repeated, varying jobs within approved bounds; it does not remove current automated checks or create permanent trust.
 
 ## Governance Must Span Systems
 
-**No single system can govern an autonomous agent alone.**
-
-An agent operates across identity, infrastructure, security, and data systems simultaneously. Governance scoped to any one domain cannot see or constrain cross-system behavior. Enforcement must coordinate across every domain the agent touches — in real time.
-
-</div>
-
-</div>
-
-<div class="law-block" data-astro-cid-oudwzbyk="">
-
-<div class="law-num" data-astro-cid-oudwzbyk="">
-
-04
-
-</div>
-
-<div class="law-body" data-astro-cid-oudwzbyk="">
+The declared boundary shall include relevant tools, resources, queues, delegated work, persistent state and downstream effects. Controls shall maintain coherent authority, constraints and evidence across that boundary. Exclusions and uncovered paths remain explicit limitations. The doctrine requires coordinated properties, not one vendor, physical appliance or central service.
 
 ## Trust Does Not Travel
 
-**Trust does not transfer automatically between agents.**
-
-Every handoff is a trust boundary: delegation, orchestration, tool invocation, subagent spawning. The agent on the receiving end inherits the task, not the authority. Every participant in an interaction chain must be independently identified, independently authorized, and independently governed.
-
-</div>
-
-</div>
-
-<div class="law-block" data-astro-cid-oudwzbyk="">
-
-<div class="law-num" data-astro-cid-oudwzbyk="">
-
-05
-
-</div>
-
-<div class="law-body" data-astro-cid-oudwzbyk="">
+A handoff carries a task and relevant authenticated context, not automatic authority. A recipient shall be identified and authorized at its own boundary. Federation is permitted: different resource authorities can grant the authority for their resources. Delegation may narrow or exercise an authorized grant chain; it shall not amplify what the delegator is authorized to grant or bypass receiving policy. An orchestrator need not accumulate every execution privilege held by its workers.
 
 ## Humans Retain the Right to Intervene
 
-**At every layer of an agentic system, a human must be able to inspect, interrupt, and override.**
+Authorized humans shall have an effective means to inspect, interrupt and override governed activity. A profile shall identify the relevant authority and measurable intervention behavior. Prior authorization, interruption, revocation, containment and recovery are different operations. An interruption shall preserve accountable ownership of unfinished work and expose residual effects; neither safety nor successful continuity follows from a stop button alone.
 
-This is not a fallback. It is a design requirement. Any architecture that makes human intervention technically difficult or operationally impractical has failed the Governed Autonomy standard — regardless of how sophisticated its automated governance is.
-
-</div>
-
-</div>
-
-<div class="origin" data-astro-cid-oudwzbyk="">
-
-### Origin Principle
-
-These five laws derive from a single assertion:
-
-> Autonomous AI agents are a new class of enterprise actor. Authorizing them is necessary. Governing them continuously, at runtime, across systems, at the level of behavior — is non-negotiable.
-
-</div>
+The full v4 text, including the mandatory runtime baseline each Law is implemented through, is on the [Doctrine v4](https://governedautonomy.org/doctrine/) page.

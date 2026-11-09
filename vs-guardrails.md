@@ -1,5 +1,5 @@
-> **Canonical:** https://governedautonomy.org/vs/guardrails/ · Doctrine v3.4 · published by the Governed Autonomy Institute
-> This mirror may lag the site; the site is authoritative.
+> **Canonical:** https://governedautonomy.org/vs/guardrails/ · Doctrine v4 · published by the Governed Autonomy Institute
+> This file is generated from the built site at https://governedautonomy.org/vs/guardrails/ — the site is authoritative.
 
 # Governed Autonomy vs AI Guardrails
 
@@ -9,13 +9,13 @@ Guardrails (input filtering, output moderation, content policies, jailbreak resi
 
 An autonomous agent's risk is not in what it says. It is in what it does.
 
------
+---
 
 ## What guardrails do well
 
-  - Filter harmful, off-policy, or sensitive content at the model boundary
-  - Reduce, though never eliminate, prompt-level manipulation of model outputs
-  - Cheap to deploy and model-adjacent: a sensible baseline for any AI exposure
+- Filter harmful, off-policy, or sensitive content at the model boundary
+- Reduce, though never eliminate, prompt-level manipulation of model outputs
+- Cheap to deploy and model-adjacent: a sensible baseline for any AI exposure
 
 ## Where they stop
 
@@ -29,7 +29,7 @@ The agent's consequential surface is its **tool calls**: API invocations, file o
 
 ### System integration
 
-Guardrails live at one model boundary. An agent's mission spans many systems, many calls, many boundaries, and the risk often emerges only from the *sequence* (read here, combine there, send outward). No per-call content filter can see a cross-system pattern. [Governance Must Span Systems](/laws/#law-3-governance-must-span-systems); guardrails, by construction, govern one checkpoint.
+Guardrails live at one model boundary. An agent's mission spans many systems, many calls, many boundaries, and the risk often emerges only from the *sequence* (read here, combine there, send outward). No per-call content filter can see a cross-system pattern. [Governance Must Span Systems](https://governedautonomy.org/laws/#law-3-governance-must-span-systems); guardrails, by construction, govern one checkpoint.
 
 ## The gap
 
@@ -37,4 +37,8 @@ Guardrails live at one model boundary. An agent's mission spans many systems, ma
 
 ## Coordination, not replacement
 
-In the Governed Autonomy model, guardrails remain the model-boundary control: useful, baseline, and insufficient. [Execution & Tool Governance](/architecture/#plane-2-execution-tool-governance) and the [Policy & Compliance Engine](/architecture/#plane-3-policy-compliance-engine) pick up where the content boundary ends: evaluating actions, not sentences, under [Enforce at Runtime](/laws/#law-2-enforce-at-runtime). If your AI safety story ends at the prompt, your agents are governed only when they talk.
+In the Governed Autonomy model, guardrails remain the model-boundary control: useful, baseline, and insufficient. [Execution & Tool Governance](https://governedautonomy.org/architecture/#plane-2-execution-tool-governance) and the [Policy & Compliance Engine](https://governedautonomy.org/architecture/#plane-3-policy-compliance-engine) pick up where the content boundary ends: evaluating actions, not sentences, under [Enforce at Runtime](https://governedautonomy.org/laws/#law-2-enforce-at-runtime). If your AI safety story ends at the prompt, your agents are governed only when they talk.
+
+## The test for any control
+
+Whatever its vendor calls it: does the control mediate consequential actions, and can the governed actor bypass or disable it? A product sold as a guardrail that intercepts actions before they execute is a Plane 2 mechanism regardless of its label. A control the agent can update away, or that sits in only one system, is not governance, whatever it is called. What makes a control part of Governed Autonomy is that it is external to the agent, cannot be modified by the agent, and spans the systems the agent touches ([Law 2](https://governedautonomy.org/laws/#law-2-enforce-at-runtime), [Law 3](https://governedautonomy.org/laws/#law-3-governance-must-span-systems)).
